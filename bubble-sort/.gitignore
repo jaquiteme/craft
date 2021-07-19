@@ -1,4 +1,4 @@
 ./.vscode
 .project
-./target
+./target/*
 ./classpath
