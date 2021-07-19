@@ -57,4 +57,10 @@ public class AppTest {
 		String error = "Number expected but EOF found";
 		assertEquals(error, calculator.add(number));
 	}
+	
+	@Test
+	public void shouldReturnRightResultWithCustomSeperator() {
+		String number = "//;\n1;2";
+		assertEquals("3.0", calculator.add(number));
+	}
 }
